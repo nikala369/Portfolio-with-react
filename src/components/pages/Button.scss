@@ -1,0 +1,74 @@
+$primaryBtn: white;
+$primary-color: #33332d;
+
+    .btn {
+        padding: 10px 22px;
+        border-radius: 1px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+    .btn--primary {
+        background-color: $primaryBtn;
+        color: rgb(31, 32, 34);
+        border: 1px solid $primaryBtn;
+        padding: 10px 22px;
+    }
+
+    .btn--putline {
+        background-color: transparent;
+        color: white;
+        padding: 8px 20px;
+        border: 1px solid $primaryBtn;
+        transition: all 0.3 ease-out;
+    }
+    .btn--medium {
+        padding: 8px 20px;
+        font-size: 18px;
+        border: 2px solid black;
+        font-weight: 700;
+    }
+    .btn--large {
+        padding: 12px 26px;
+        font-size: 20px;
+    }
+    .btn--mobile {
+        text-align: center;
+        border-radius: 4px;
+        width: 100%;
+        text-decoration: none;
+        font-size: 23px;
+        background-color: rgb(197, 120, 5);
+        color: black;
+        font-weight: 700;
+        padding: 14px 20px;
+        transition: all 0.3 ease-out;
+    }
+    .btn--wide {
+        padding: 12px 64px;
+        font-size: 20px;
+    }
+    .btn--large:hover, .btn--mobile:hover {
+        transition: all 0.3s ease-out;
+        
+        color: rgb(31, 32, 34);
+    }
+    .btn--medium:hover {
+        color: white;
+        background: #1e1f20;
+        transition: all 0.4s ease;
+    }
+    .btn--wide:hover {
+        color: $primaryBtn;
+        background-color: rgb(168, 71, 71);
+        transition: all 0.3s ease-out;
+    }
+
+    
+
+
+
+
+

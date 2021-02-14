@@ -1,0 +1,108 @@
+.whole-animation {
+  position: absolute;
+  right: -100%;
+  top: -200px;
+  z-index: -1;
+  -webkit-animation: whole-anim 6.5s forwards;
+          animation: whole-anim 6.5s forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+@-webkit-keyframes whole-anim {
+  0% {
+    right: -25%;
+    top: -230px;
+    width: 0px;
+  }
+  100% {
+    right: 8.5%;
+    top: 135px;
+    width: 400px;
+  }
+}
+
+@keyframes whole-anim {
+  0% {
+    right: -25%;
+    top: -230px;
+    width: 0px;
+  }
+  100% {
+    right: 8.5%;
+    top: 135px;
+    width: 400px;
+  }
+}
+
+.whole-asteroid {
+  -webkit-animation: whole-ast 5s infinite;
+          animation: whole-ast 5s infinite;
+}
+
+@-webkit-keyframes whole-ast {
+  0% {
+    -webkit-transform: rotateY(0rad);
+            transform: rotateY(0rad);
+  }
+  50% {
+    -webkit-transform: rotateY(0.2rad);
+            transform: rotateY(0.2rad);
+  }
+  80% {
+    -webkit-transform: rotateX(0.1rad);
+            transform: rotateX(0.1rad);
+  }
+}
+
+@keyframes whole-ast {
+  0% {
+    -webkit-transform: rotateY(0rad);
+            transform: rotateY(0rad);
+  }
+  50% {
+    -webkit-transform: rotateY(0.2rad);
+            transform: rotateY(0.2rad);
+  }
+  80% {
+    -webkit-transform: rotateX(0.1rad);
+            transform: rotateX(0.1rad);
+  }
+}
+
+.big-asteroid {
+  -webkit-animation: big-ast 5s infinite;
+          animation: big-ast 5s infinite;
+}
+
+@-webkit-keyframes big-ast {
+  0% {
+    -webkit-transform: rotateX(-5deg);
+            transform: rotateX(-5deg);
+  }
+  50% {
+    -webkit-transition: 3s ease;
+    transition: 3s ease;
+    -webkit-transform: rotateZ(2deg);
+            transform: rotateZ(2deg);
+  }
+}
+
+@keyframes big-ast {
+  0% {
+    -webkit-transform: rotateX(-5deg);
+            transform: rotateX(-5deg);
+  }
+  50% {
+    -webkit-transition: 3s ease;
+    transition: 3s ease;
+    -webkit-transform: rotateZ(2deg);
+            transform: rotateZ(2deg);
+  }
+}
+
+.big-asteroid-holes {
+  -webkit-animation: big-ast 3s infinite;
+          animation: big-ast 3s infinite;
+}
+/*# sourceMappingURL=SvgBackground.css.map */

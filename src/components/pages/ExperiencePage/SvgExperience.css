@@ -1,0 +1,103 @@
+.background-position {
+  float: right;
+  margin-top: -365px;
+  margin-right: -90px;
+}
+
+.background-transform {
+  width: 600px;
+}
+
+.ufo-ending {
+  -webkit-animation: ufo-ending 5s infinite linear;
+          animation: ufo-ending 5s infinite linear;
+}
+
+.ufo-head {
+  -webkit-animation: ufo-head 3s infinite linear;
+          animation: ufo-head 3s infinite linear;
+}
+
+@-webkit-keyframes ufo-ending {
+  0% {
+    position: absolute;
+    -webkit-transform: rotateX(-4deg);
+            transform: rotateX(-4deg);
+    z-index: -1;
+  }
+  50% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes ufo-ending {
+  0% {
+    position: absolute;
+    -webkit-transform: rotateX(-4deg);
+            transform: rotateX(-4deg);
+    z-index: -1;
+  }
+  50% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@-webkit-keyframes ufo-head {
+  0% {
+    -webkit-transform: rotateY(0rad);
+            transform: rotateY(0rad);
+  }
+  50% {
+    -webkit-transform: rotateY(0.2rad);
+            transform: rotateY(0.2rad);
+  }
+}
+
+@keyframes ufo-head {
+  0% {
+    -webkit-transform: rotateY(0rad);
+            transform: rotateY(0rad);
+  }
+  50% {
+    -webkit-transform: rotateY(0.2rad);
+            transform: rotateY(0.2rad);
+  }
+}
+
+.main-bubbles {
+  -webkit-animation: main-bubbles 3.5s infinite linear;
+          animation: main-bubbles 3.5s infinite linear;
+}
+
+@-webkit-keyframes main-bubbles {
+  0% {
+    -webkit-transform: rotateY(0rad);
+            transform: rotateY(0rad);
+  }
+  50% {
+    -webkit-transform: rotateY(-0.2rad);
+            transform: rotateY(-0.2rad);
+  }
+  80% {
+    -webkit-transform: rotateX(0.2rad);
+            transform: rotateX(0.2rad);
+  }
+}
+
+@keyframes main-bubbles {
+  0% {
+    -webkit-transform: rotateY(0rad);
+            transform: rotateY(0rad);
+  }
+  50% {
+    -webkit-transform: rotateY(-0.2rad);
+            transform: rotateY(-0.2rad);
+  }
+  80% {
+    -webkit-transform: rotateX(0.2rad);
+            transform: rotateX(0.2rad);
+  }
+}
+/*# sourceMappingURL=SvgExperience.css.map */

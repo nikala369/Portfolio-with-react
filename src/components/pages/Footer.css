@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
+.footer-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5px;
+  position: fixed;
+  bottom: 15px;
+  margin-left: -10px;
+  height: 100px;
+}
+
+.footer-div::after {
+  content: 'Created By Nikala Mikeladze';
+  font-family: 'Aldrich', sans-serif;
+  font-size: 11.5px;
+  letter-spacing: 1px;
+  position: absolute;
+  margin-top: 87.5px;
+}
+/*# sourceMappingURL=Footer.css.map */

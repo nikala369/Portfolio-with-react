@@ -1,0 +1,77 @@
+.svg {
+    opacity: 0;
+      filter: drop-shadow(0 0.1rem 0.12rem rgba(0, 0, 0, 0.3));
+}
+
+.strike {
+   animation: striking 1s ease;
+   transform-origin: center;
+   animation-delay: 3.8s;
+}
+.strike2 {
+    animation: striking2 1s ease;
+    transform-origin: center;
+    animation-delay: 4.7s;
+}
+.rotate-square {
+    animation: rotate-square 7s infinite linear;
+    animation-delay: 5.5s;
+}
+
+@keyframes rotate-square {
+    0%{
+        transform: rotateX(-10deg);
+
+    }
+    25% {
+        transition: 1s ease;
+        transform-origin: center;
+        transform: rotateZ(120deg);
+
+    }
+    50% {
+        transition: 1s ease;
+        transform-origin: center;
+        transform: rotateZ(1850deg);
+
+    }
+    100%{
+        transform: rotateX(-10deg);
+
+    }
+}
+
+@keyframes striking {
+    from{
+       transform: rotateZ(0deg);
+    }
+     to {
+       transform: rotateZ(360deg);
+     }
+
+}
+@keyframes striking2 {
+    from{
+       transform: rotateZ(0deg);
+    }
+     to {
+       transform: rotateZ(360deg);
+     }
+
+}
+.circle-moving {
+    animation: circle-move 1s ease;
+    
+}
+@keyframes circle-move {
+    0%{
+        transform: rotateX(0deg);
+    }
+    50%{
+        transform: rotateX(-45deg);
+        
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}

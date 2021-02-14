@@ -1,0 +1,216 @@
+
+body{
+    height: 100vh;
+}
+
+ $primary-color: #33332d;
+ $--white: white;
+.control-text1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    transition: all 0.4s ease;
+    
+}
+.heading-style {
+    font-size: 40px;
+    line-height: 40px;
+    animation: fadeInLeftBig 2s;
+    height: 40px;
+    font-family: IBM Plex Mono,monospace;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+.blast {
+    user-select: none;
+}
+.blast-main {
+    color: rgb(137, 169, 221);
+    text-shadow: rgb(117, 0, 0) -3px -2px;
+}
+.blast:hover {
+  animation: blasting 0.6s forwards;
+  transition: all 0.5s ease;
+}
+@keyframes blasting {
+   0% {
+       position: relative;
+       opacity: 0;
+       transform: translate(10deg);
+       color: $primary-color;
+   }
+   50%{
+      opacity: 0.5; 
+   }
+   100% {
+        opacity: 1;
+        transform: translate(20deg);
+        color: rgb(137, 169, 221);
+        text-shadow: rgb(117, 0, 0) -5px -2px;
+   }
+}
+
+.paragrap1 {
+    font-family: IBM Plex Mono,monospace;
+    font-size: 35px;
+    transition: all 0.3s ease;
+    user-select: none;
+    
+}
+.paragrap1 span {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+}
+
+.button-style-homepage {
+    padding: 17px 125px;
+    margin-top: 20px;
+    border: 3px solid $primary-color;
+    background-color: $--white;
+    box-shadow: -7.5px -5px 2.5px $primary-color;
+    border-radius: 2.5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    white-space: nowrap;
+    margin: 0px;
+    cursor: pointer;
+}
+.button-style-homepage:hover {
+    transition: all 0.3s ease;
+    color: $--white;
+    background-color: $primary-color;
+    border-radius: 0px;
+}
+.button-style-homepage:focus {
+    outline: none;
+}
+
+
+@media screen and (max-width: 620px) {
+    .control-text1 {
+        flex-direction: column;
+        float: left;
+        align-items: flex-start;
+        margin-top: 80px;
+    }
+    .heading-style {
+        font-size: 27.5px;
+        margin-left: -22.5px;
+    }
+    .paragrap1 {
+        font-size: 30px;
+        line-height: 30px;
+        margin-top: 35px;
+        margin-left: -22.5px;
+    }
+    .paragrap1 span {
+    font-size: 18px;
+    }
+    .button-style-homepage {
+       margin-top: 45px;
+       padding: 15px 55px;
+       margin-left: -7.5px;
+    }
+}
+
+
+ /* iphone 6, 6s, 7, 8 */
+ @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2),
+  (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3),
+   (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .control-text1 {
+        flex-direction: column;
+        float: left;
+        align-items: flex-start;
+        margin-top: 80px;
+    }
+    .heading-style {
+        font-size: 20px;
+        margin-top: -30px;
+        margin-left: -23.5px;
+    }
+    .paragrap1 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 40px;
+        margin-left: -23.5px;
+    }
+    .paragrap1 span {
+    font-size: 18px;
+    }
+    .button-style-homepage {
+       margin-top: 45px;
+       padding: 15px 55px;
+       margin-left: -9.5px;
+    }
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
+    .control-text1 {
+        flex-direction: column;
+        float: left;
+        align-items: flex-start;
+        margin-top: 80px;
+    }
+    .heading-style {
+        font-size: 20px;
+        margin-top: -35px;
+        margin-left: -45.5px;
+    }
+    .paragrap1 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 40px;
+        margin-left: -45.5px;
+    }
+    .paragrap1 span {
+       font-size: 18px;
+    }
+    .button-style-homepage {
+       margin-top: 45px;
+       padding: 15px 55px;
+       margin-left: -42.5px;
+    }
+    .button-style-homepage:focus {
+        outline: none;
+    }
+    @keyframes blasting {
+        0% {
+            position: relative;
+            opacity: 0;
+            transform: translate(10deg);
+            color: $primary-color;
+        }
+        50%{
+           opacity: 0.5; 
+        }
+        100% {
+             opacity: 1;
+             transform: translate(20deg);
+             color: rgb(137, 169, 221);
+             text-shadow: rgb(117, 0, 0) -3px -1px;
+        }
+     }
+  }
+
+      
+  
+ /* iphone 6+, 6s+, 7+, 8+ */
+/* @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) { }*/
+ 
+ /* iphone X , XS, 11 Pro, 12 Mini */
+ /*@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) { }*/
+
+ /* iphone 12, 12 Pro */
+ /*@media only screen and (min-device-width: 390px) and (max-device-height: 844px) and (-webkit-device-pixel-ratio: 3) { }*/
+
+ /* iphone XR, 11 */
+ /*@media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 2) { }*/
+     
+ /* iphone XS Max, 11 Pro Max */
+ /*@media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 3) { }*/
+
+ /* iphone 12 Pro Max */
+ /*@media only screen and (min-device-width : 428px) and (max-device-height : 926px) and (-webkit-device-pixel-ratio : 3) { }*/
+

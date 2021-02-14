@@ -1,0 +1,105 @@
+// Blue classic
+.whole-animation {
+    position: absolute;
+    right: -100%;
+    top: -200px;
+    z-index: -1;
+    animation: whole-anim 6.5s forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes whole-anim {
+    0% {
+    right: -25%;
+    top: -230px;
+    width: 0px;
+    
+    }
+    100% {
+        right: 8.5%;
+        top: 135px;
+        width: 400px;
+    }
+}
+
+.whole-asteroid {
+    animation: whole-ast 5s infinite;
+}
+@keyframes whole-ast {
+        0%{transform: rotateY(0rad); }
+    50%{transform: rotateY(0.2rad);}
+    80% {
+        transform: rotateX(0.1rad);
+    }
+}
+
+.big-asteroid {
+    animation: big-ast 5s infinite;
+}
+
+@keyframes big-ast {
+    0%{
+        transform: rotateX(-5deg);
+    }
+    50% {
+        transition: 3s ease;
+        transform: rotateZ(2deg);
+    }
+}
+
+.big-asteroid-holes {
+  animation: big-ast 3s infinite;
+}
+
+
+
+
+
+
+// .background-position {
+//     float: right;
+//     margin-top: -365px;
+//     margin-right: -90px;
+// }
+// .background-transform {
+//     width: 600px;
+// }
+// .ufo-ending {
+//     animation: ufo-ending 5s infinite linear;
+// }
+// .ufo-head {
+//     animation: ufo-head 3s infinite linear;
+// }
+// @keyframes ufo-ending{
+//     0%{
+//         position: absolute;
+//         transform: rotateX(-4deg);
+//         z-index: -1;
+//     }
+//     50%{
+//         transform: rotate(1turn);
+        
+//     }
+// }
+
+// @keyframes ufo-head {
+//     0%{transform: rotateY(0rad); }
+//     50%{transform: rotateY(0.2rad);}
+// }
+
+// .main-bubbles {
+//     animation: main-bubbles 3.5s infinite linear;
+// }
+
+// @keyframes main-bubbles {
+//     0%{
+//         transform: rotateY(0rad);
+//      }
+//     50%{
+        
+//         transform: rotateY(-0.2rad);
+//     }
+//     80%{
+//         transform: rotateX(0.2rad);
+//     }
+// }

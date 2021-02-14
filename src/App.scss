@@ -1,0 +1,37 @@
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  background: linear-gradient(45deg, rgb(255, 255, 255), rgb(44, 44, 83));
+  overflow-y: auto;
+  overflow-x: hidden;
+  animation: body-anim 4s forwards;
+  animation-delay: 2.1s;
+}
+@keyframes body-anim {
+  from {
+    background: rgb(15, 13, 41);
+  }
+  to {
+  background: white;
+  }
+}
+.body-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+h1 {
+  color: black;
+}
+
+
+
+

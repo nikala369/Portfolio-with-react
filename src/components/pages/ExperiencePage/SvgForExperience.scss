@@ -1,0 +1,44 @@
+
+.background-transform {
+    position: absolute;
+    
+}
+.ufo-ending {
+    animation: ufo-ending 5s infinite linear;
+}
+.ufo-head {
+    animation: ufo-head 3s infinite linear;
+}
+@keyframes ufo-ending{
+    0%{
+        position: absolute;
+        transform: rotateX(-4deg);
+        z-index: -1;
+    }
+    50%{
+        transform: rotate(1turn);
+        
+    }
+}
+
+@keyframes ufo-head {
+    0%{transform: rotateY(0rad); }
+    50%{transform: rotateY(0.2rad);}
+}
+
+.main-bubbles {
+    animation: main-bubbles 3.5s infinite linear;
+}
+
+@keyframes main-bubbles {
+    0%{
+        transform: rotateY(0rad);
+     }
+    50%{
+        
+        transform: rotateY(-0.2rad);
+    }
+    80%{
+        transform: rotateX(0.2rad);
+    }
+}
